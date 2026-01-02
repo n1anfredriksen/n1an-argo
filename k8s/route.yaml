@@ -1,0 +1,11 @@
+apiVersion: route.openshift.io/v1                                         
+kind: Route                                                               
+metadata:                                                                 
+  name: n1an-argo                                                        
+  labels:                                                                 
+    app: n1an-argo                                                       
+spec:                                                                     
+  to:                                                                     
+    kind: Service                                                         
+    name: n1an-argo                                                      
+    weight: 100
